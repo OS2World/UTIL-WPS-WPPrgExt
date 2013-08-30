@@ -1,0 +1,45 @@
+#include "wpprgext.ih"
+
+STRINGTABLE
+BEGIN
+    ID_TITLE            "Extended Program"
+    IDSC_SHIFT          "Shift keys"
+    IDSC_F1             "F1"
+    IDSC_F2             "F2"
+    IDSC_F3             "F3"
+    IDSC_F4             "F4"
+    IDSC_F5             "F5"
+    IDSC_F6             "F6"
+    IDSC_F7             "F7"
+    IDSC_F8             "F8"
+    IDSC_F9             "F9"
+    IDSC_F10            "F10"
+    IDSC_F11            "F11"
+    IDSC_F12            "F12"
+END
+
+DLGTEMPLATE IDD_FOLDER LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+
+    DIALOG  "Folder Option", IDD_FOLDER, 72, -6, 202, 149, NOT FS_DLGBORDER | WS_VISIBLE
+    BEGIN
+        GROUPBOX        "Close folder upon", IDGROUP_FOLDERCLOSE, 19, 24, 167, 60
+        AUTOCHECKBOX    "opening settings notebook", IDCHECK_CLOSENOTEBOOK, 30, 56, 148, 10
+        AUTOCHECKBOX    "executing program", IDCHECK_CLOSEPROGRAM, 30, 38, 91, 10
+    END
+END
+
+DLGTEMPLATE IDD_FOLDERKEY LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Folder Key", IDD_FOLDERKEY, 72, -6, 202, 149, NOT FS_DLGBORDER | WS_VISIBLE
+    BEGIN
+        GROUPBOX        "Folder Closing Key", IDGROUP_KEYSELECTION, 25, 18, 156, 114
+        LTEXT           "Any changes made in this page", IDTEXT_LINE1, 36, 102, 129, 8 NOT WS_GROUP
+        LTEXT           "will affect every program object", IDTEXT_LINE2, 36, 90, 136, 8, NOT WS_GROUP
+        LTEXT           "on the desktop", IDTEXT_LINE3, 36, 78, 92, 8, NOT WS_GROUP
+        LTEXT           "Key selection", IDTEXT_KEYSELECTION, 42, 57, 56, 8
+        CONTROL         "", IDCOMBO_KEYSELECTION, 48, 0, 108, 53, WC_COMBOBOX, CBS_DROPDOWNLIST | WS_TABSTOP | WS_VISIBLE
+    END
+END
+
+

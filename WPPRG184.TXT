@@ -1,0 +1,21 @@
+OS/2 Upload Information Template for ftp-os2.nmsu.edu
+
+Archive Name: wpprg184.zip
+Program Description: A replacement WPS class for WPProgram.
+                     This class adds to the program objects
+                     an option to close the folder they belong
+                     to upon starting program or setting 
+                     notebook.
+                    
+Operating System: OS/2 2.1 (tested on OS/2 2.1 and 2.11)
+
+Program Source: ydlee@cs.ukans.edu
+
+Replaces: wpprg183.zip
+
+Your name: Yong D. Lee
+
+Your email address: ydlee@cs.ukans.edu
+
+Proposed directory for placement: /pub/os2/2_x/sysutils
+
